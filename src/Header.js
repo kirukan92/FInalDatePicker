@@ -6,9 +6,9 @@ export default class Header extends Component {
     constructor(props){
         super(props);
     }
-  render() {
+  render(){
     return (
-            <div>{`${months[this.props.currentState.activeMonth]}${this.props.currentState.activeYear}`}</div>
+            <span><span>{months[this.props.currentState.activeMonth]}</span><span>{this.props.currentState.activeYear}</span></span>
     );
   }
 }
