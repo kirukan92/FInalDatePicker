@@ -5,9 +5,9 @@ export default class TableHeader extends React.Component{
     render(){
         return(
             <thead>
-            <tr>
+            <th>
                 {days.map((day,index)=><td key={index}>{day}</td>)}
-            </tr>
+            </th>
             </thead>  
         );
     }
